@@ -1,0 +1,46 @@
+AI Overview
+All-in-one (AIO) liquid CPU coolers are generally classified into performance and value tiers based on thermal efficiency, noise levels, build quality, and features like LCD screens or ecosystem integration. 
+
+Hardware Busters
+ +1
+AIO Cooler Tiers & Top Recommendations
+S-Tier (Class-Leading / Flagship Performance)
+Characteristics: Maximum thermal performance, zero meaningful weaknesses, heavy-duty radiators, and premium feature sets (custom LCD displays or integrated VRM fans).
+Top Models:
+Arctic Liquid Freezer III Pro (Thickness-upgraded radiator, high static pressure, integrated VRM fan)
+NZXT Kraken Elite V2 / 360 (Industry-leading round LCD displays and strong noise-normalized thermals)
+Noctua NL-LC1 / NLLC136 (Acoustic perfection and ultra-low noise output)
+Tryx Panorama 360 (Top-tier out-of-the-box and noise-normalized thermals)
+Lian Li Galahad II Trinity Performance (Exceptional high-load cooling headroom) 
+
+GamersNexus
+ +6
+A-Tier (High-End / Great All-Rounders)
+Characteristics: Strong cooling capability, quieter operation than budget units, refined aesthetics, and reliable pump/fan hardware.
+Top Models:
+Corsair iCUE LINK TITAN RX Series (Clean single-cable ecosystem integration)
+Thermalright Grand Vision 360 ARGB (High-value LCD display with software-free options)
+Lian Li Hydro Shift 2 LCDC (Side-mounted tube routing for clean back-connect cable hiding)
+be quiet! Silent Loop 3 / Pure Loop 3 LX (Engineered for quiet operation) 
+
+YouTube
+·LvL Up Gaming
+ +4
+B-Tier (Smart Value / Mid-Range)
+Characteristics: Great price-to-performance ratio, solid cooling for standard-to-enthusiast gaming CPUs, and basic ARGB lighting.
+Top Models:
+ID-Cooling FX360 INF / FX 360 Pro (Affordable 360mm performance with basic infinity mirror/RGB)
+Thermalright Aqua Elite V6 (Top budget-conscious entry for sub-$60 pricing)
+Cooler Master MasterLiquid 240 Atmos (Reliable mid-sized versatile all-rounder) 
+
+Tom's Hardware
+ +4
+C-Tier / Entry-Level (Budget / Compact)
+Characteristics: Single-fan 120mm or basic 240mm units meant for lower-TDP processors or tight budget constraints where liquid aesthetics are preferred over a dual-tower air cooler.
+Top Models:
+Enermax LiqMaxFlo SR 120mm
+MSI MAG CoreLiquid A13 / A15 
+
+YouTube
+·Robeytech
+ +2

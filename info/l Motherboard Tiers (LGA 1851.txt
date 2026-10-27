@@ -1,0 +1,36 @@
+Intel Motherboard Tiers (LGA 1851 / LGA 1700)
+Workstation / Enterprise (W-Series): e.g., W890 / W790 — Built for professional server/workstation CPUs (Xeon), supporting ECC memory and massive PCIe lane counts. 
+
+ASUS
+ +1
+High-End / Enthusiast (Z-Series): e.g., Z890 / Z790 — Top-tier consumer boards. Feature full CPU and memory overclocking, maximum PCIe lanes, robust VRMs, and high-speed I/O (USB4/Thunderbolt, Wi-Fi 7). 
+
+PCMag
+ +2
+Mid-Range / Mainstream (B-Series): e.g., B860 / B760 — The best value for most gamers and general builders. Supports memory overclocking (XMP), modern PCIe, and solid connectivity without the extra cost of a Z-series board. 
+
+YouTube
+·Tech Notice
+ +1
+Entry-Level / Budget (H-Series): e.g., H810 / H610 — Basic boards with locked overclocking, fewer M.2/SATA ports, and minimal VRMs. 
+
+YouTube
+·Tech Notice
+ +1
+AMD Motherboard Tiers (AM5 / AM4)
+Workstation / HEDT (WRX / TRX / sTR5): e.g., WRX90 / sTR5 — For AMD Threadripper or workstation processors with massive core counts and multi-channel memory. 
+
+YouTube
+·Tech Notice
+High-End / Enthusiast (X-Series): e.g., X870E / X870 / X670E — Flagship consumer platforms. Offer maximum PCIe Gen 5 lanes, extensive USB/Wi-Fi options, and heavy-duty power delivery for overclocking Ryzen 7/9 chips. 
+
+Evetech
+ +1
+Mid-Range / Mainstream (B-Series): e.g., B850 / B650 / B550 — The sweet spot for price-to-performance. Supports CPU/memory overclocking and modern standards like PCIe 4.0/5.0 and DDR5 at a lower price. 
+
+Tom's Hardware
+ +2
+Entry-Level / Budget (A-Series): e.g., A620 / A520 — Bare-bones budget boards intended for low-wattage, stock-clocked CPUs with restricted feature sets. 
+
+YouTube
+·Tech Notice

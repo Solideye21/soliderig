@@ -1,0 +1,18 @@
+
+RAM Performance Tier List
+
+• S-Tier (Elite Performance): DDR5 6000–7000 MHz (CL30) with dual-channel configuration and XMP/EXPO enabled.
+• A-Tier (High Performance): DDR4 3200–3600 MHz (CL16–CL18) with dual-channel configuration and XMP/EXPO.
+• B-Tier (Mid-High Performance): DDR5 5200–5600 MHz with dual-channel configuration.
+• C-Tier (Mainstream/Budget): DDR4 3000–3200 MHz with dual-channel configuration.
+• D-Tier (Entry-Level/Slow): DDR4 below 3000 MHz or single-channel setups.
+• E-Tier (Legacy/Sub-optimal): DDR3 modules, mixed RAM sticks, or configurations missing XMP/EXPO profiles.
+• F-Tier (Obsolete/Avoid): DDR3 modules without XMP/EXPO or heavily mismatched/mixed RAM sticks.
+
+RAM Capacity Tiers
+
+• 2 GB – 4 GB: Obsolete or bare minimum; struggles heavily with modern operating systems and multitasking.
+• 8 GB: Baseline for basic office work and light web browsing, though easily maxed out by background apps.
+• 16 GB: The current "sweet spot" for gaming, media consumption, and general multitasking.
+• 32 GB: Ideal for heavy gamers, content creators, and running large applications simultaneously.
+• 64 GB – 128 GB+: Workstation tier for 4K/8K video editing, heavy 3D rendering, virtual machines, and AI workloads.

@@ -1,0 +1,28 @@
+PC Build Storage Tiers
+Entry-Level Tier (Budget / 1080p Gaming)
+Storage Space: 512GB to 1TB NVMe M.2 SSD (Gen 3 or basic Gen 4).
+Use Case: Operating system, core applications, and a small library of lighter or esports games (e.g., Counter-Strike 2, League of Legends). 
+
+YouTube
+·Socket-X
+ +1
+Mid-Range Tier (Performance / 1440p Gaming)
+Storage Space: 1TB to 2TB NVMe M.2 SSD (often a fast PCIe Gen 4 drive like a Samsung 990 Pro).
+Use Case: Fast Windows boot times (5–7 seconds), smooth asset loading, and a comfortable multi-game AAA library without constant uninstallation. 
+
+YouTube
+·explainerguy01
+ +3
+High-End & Enthusiast Tier (4K Gaming, Streaming, & Workstation)
+Storage Space: 2TB to 4TB+ fast NVMe M.2 SSDs (sometimes split into a dedicated smaller OS drive and a massive secondary game/scratch drive, or paired with a secondary high-capacity 4TB–8TB HDD or SATA SSD).
+Use Case: Heavy open-world games, 4K video editing timelines, 3D rendering caches, and simultaneous stream recording. 
+
+Seagate.com
+ +4
+Tips
+DRAM Cache: Look for NVMe drives that include a built-in DRAM cache so sustained heavy writes do not slow down.
+Dual Drives: Keep a smaller 500GB–1TB NVMe drive strictly for the OS and critical programs, and use a separate 2TB+ drive for games. 
+
+YouTube
+·Zack Shutt
+ 

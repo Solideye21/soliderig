@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en-NG">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SolidRig — Custom Gaming PCs, Built to Spec in Nigeria</title>
+<meta name="description" content="SolidRig builds custom gaming and workstation PCs in Nigeria. Five tiered builds from 1080p esports to 4K flagship, every part graded, every rig burn-in tested. Priced in USD, delivered nationwide." />
+<meta name="theme-color" content="#07080a" />
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="SolidRig — Custom Gaming PCs, Built to Spec" />
+<meta property="og:description" content="Five tiered builds. Every part graded S to F. Burn-in tested, cable managed, delivered nationwide across Nigeria." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/styles.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "SolidRig",
+  "description": "Custom gaming and workstation PC builds, assembled and tested in Nigeria.",
+  "areaServed": "Nigeria",
+  "priceRange": "$649 - $4299",
+  "currenciesAccepted": "USD, NGN",
+  "makesOffer": {
+    "@type": "OfferCatalog",
+    "name": "Custom PC builds"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- ============================ NAV ============================ -->
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="brand" href="#top" aria-label="SolidRig home">
+      <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+        <defs>
+          <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ff7a45" />
+            <stop offset="1" stop-color="#f5b642" />
+          </linearGradient>
+        </defs>
+        <path d="M16 1.5 29 8.75v14.5L16 30.5 3 23.25V8.75z" fill="none" stroke="url(#lg)" stroke-width="1.4" opacity=".55" />
+        <path d="M18.9 7 10 17.4h4.6L13 25l9.4-11.1h-4.5z" fill="url(#lg)" />
+      </svg>
+      <span>Solid<span class="brand__dot">Rig</span></span>
+    </a>
+
+    <nav class="nav__links" id="nav-links" aria-label="Main">
+      <a href="#builds">Builds</a>
+      <a href="#builder">Build your own</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#components">Components</a>
+      <a href="#sourcing">Sourcing</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+      <a href="#quote" class="nav__quote-link">Get a quote</a>
+    </nav>
+
+    <div class="nav__cta">
+      <a class="btn btn--primary btn--sm" href="#quote">Get a quote</a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div>
+        <span class="eyebrow">Custom PCs · Built in Nigeria</span>
+        <h1>Machines built to spec.<br /><span class="grad">Not off the shelf.</span></h1>
+        <p class="hero__lede">
+          We assemble, cable-manage and stress-test custom gaming and workstation PCs.
+          Every component is graded on our tier ladder, and every price is built from
+          landed cost — parts, freight, duty, assembly and margin, shown in full.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#builds">Browse builds</a>
+          <a class="btn btn--ghost" href="#builder" data-cta="hero">Build it part by part</a>
+        </div>
+
+        <div class="hero__stats">
+          <div class="hero__stat"><b data-config="leadTime">5–10 days</b><span>Typical build time</span></div>
+          <div class="hero__stat"><b data-config="warranty">24 months</b><span>Build warranty</span></div>
+          <div class="hero__stat"><b>24 hr</b><span>Burn-in before delivery</span></div>
+          <div class="hero__stat"><b>Nationwide</b><span>Delivery across Nigeria</span></div>
+        </div>
+      </div>
+
+      <!-- Sample build ticket -->
+      <aside class="ticket" aria-label="Sample build ticket">
+        <div class="ticket__head">
+          <span class="ticket__id">BUILD #SR-2291</span>
+          <span class="ticket__status"><i></i> Burn-in passed</span>
+        </div>
+        <div class="ticket__row"><span>Platform</span><span>AM5 · DDR5 · Gen 4</span></div>
+        <div class="ticket__row"><span>CPU</span><span>Ryzen 7 7800X3D</span></div>
+        <div class="ticket__row"><span>GPU</span><span>GeForce RTX 5070 12GB</span></div>
+        <div class="ticket__row"><span>Memory</span><span>32GB DDR5-6000 CL30</span></div>
+        <div class="ticket__row"><span>Storage</span><span>2TB NVMe Gen 4</span></div>
+        <div class="ticket__row"><span>Cooling</span><span>240mm AIO · 4 case fans</span></div>
+        <div class="ticket__row"><span>Parts budget</span><span>$1,500</span></div>
+        <div class="ticket__row ticket__row--total"><span>All-in price</span><span>$2,672</span></div>
+        <div class="ticket__foot">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M20 6 9 17l-5-5" /></svg>
+          Freight, duty, assembly and 24-month warranty included
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ VALUES ============================ -->
+<section class="values" aria-label="Why SolidRig">
+  <div class="value">
+    <div class="value__num">01</div>
+    <h3>Graded, not guessed</h3>
+    <p>Every part sits on a public S-to-F tier ladder. You can see exactly why it's in the build.</p>
+  </div>
+  <div class="value">
+    <div class="value__num">02</div>
+    <h3>One builder, start to finish</h3>
+    <p>The person who specs your build is the person who assembles it. No handoffs, no "the technician".</p>
+  </div>
+  <div class="value">
+    <div class="value__num">03</div>
+    <h3>Zero mystery parts</h3>
+    <p>Full parts sheet with model numbers before you pay. No "equivalent" substitutions without asking.</p>
+  </div>
+  <div class="value">
+    <div class="value__num">04</div>
+    <h3>Support that answers</h3>
+    <p>Direct line to your builder after delivery. Remote diagnostics first, bench visit if it comes to that.</p>
+  </div>
+</section>
+
+<!-- ============================ BUILDS ============================ -->
+<section class="section" id="builds">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">The ladder</span>
+      <h2>Five builds. Pick your resolution.</h2>
+      <p>
+        Each build is a complete, tested machine — not a parts list you still have to assemble.
+        Prices include parts, international freight, duty, assembly, cable management, Windows 11
+        and burn-in testing. The parts budget is shown on every card, so you can see what the
+        hardware actually costs before our work goes on top.
+      </p>
+    </div>
+
+    <div class="builds__bar">
+      <div class="segmented" role="group" aria-label="Currency">
+        <button type="button" data-currency="USD" aria-pressed="true">USD $</button>
+        <button type="button" data-currency="NGN" aria-pressed="false">NGN ₦</button>
+      </div>
+      <span class="rate-note" id="rate-note"></span>
+    </div>
+
+    <div class="builds" id="builds-grid"><!-- rendered by app.js --></div>
+  </div>
+</section>
+
+<!-- ============================ BUILD YOUR OWN ============================ -->
+<section class="section" id="builder" style="border-top: 1px solid var(--line);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Build your own</span>
+      <h2>Pick the parts. Watch the machine appear.</h2>
+      <p>
+        Click a part picture to add it to your build. The bill on the right is calculated exactly
+        like every other price on this site — parts, freight, duty, assembly, warranty — and the
+        picture redraws itself with what you chose. Pick something that doesn't fit and we'll say
+        so before you send anything.
+      </p>
+    </div>
+
+    <div class="presets" id="builder-presets"><!-- rendered by builder.js --></div>
+
+    <div class="builder">
+      <div class="builder__main">
+        <div class="bcats" id="builder-cats" role="tablist" aria-label="Part categories"></div>
+
+        <div class="builder__bar">
+          <p class="builder__hint" id="builder-hint"></p>
+          <button class="btn btn--ghost btn--sm" type="button" id="builder-reset">Clear build</button>
+        </div>
+
+        <div id="builder-options"><!-- rendered by builder.js --></div>
+
+        <p class="builder__note" id="builder-note"></p>
+      </div>
+
+      <aside class="builder__side" aria-label="Your build">
+        <div class="rigbox" id="rig-preview"><!-- rendered by builder.js --></div>
+
+        <div class="bill">
+          <div class="bill__head">
+            <h3>Your build sheet</h3>
+            <span class="bill__live"><i></i> Live</span>
+          </div>
+
+          <div class="buildlist" id="build-list"></div>
+          <div class="bill__rows" id="build-totals"></div>
+          <div class="compat" id="build-compat"></div>
+
+          <div class="builder__actions">
+            <button class="btn btn--ghost btn--sm btn--block" type="button" id="builder-download">
+              Download picture (PNG)
+            </button>
+            <a class="btn btn--primary btn--sm btn--block" id="builder-quote" href="#quote">Send this build</a>
+          </div>
+          <p class="toolnote" id="builder-status" role="status" aria-live="polite"></p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PRICING CALCULATOR ============================ -->
+<section class="section" id="pricing" style="border-top: 1px solid var(--line); background: var(--bg-elev);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Open-book pricing</span>
+      <h2>See exactly how a price is built.</h2>
+      <p>
+        This is the calculator we quote from. Parts, freight, duty, labour, warranty reserve,
+        payment fees and margin — all of it visible, all of it adjustable. Move a number and the
+        price moves with it.
+      </p>
+    </div>
+
+    <div class="calc">
+      <div class="calc__panel">
+        <div class="field">
+          <label for="c-build">Start from a build</label>
+          <select id="c-build"></select>
+        </div>
+
+        <div class="calc__grid">
+          <div class="field">
+            <label for="c-parts">Parts subtotal ($)</label>
+            <input id="c-parts" type="number" min="0" step="10" value="1500" />
+          </div>
+          <div class="field">
+            <label for="c-freight">Freight ($)</label>
+            <input id="c-freight" type="number" min="0" step="5" value="150" />
+          </div>
+          <div class="field">
+            <label for="c-duty">Duty + VAT (%)</label>
+            <input id="c-duty" type="number" min="0" max="100" step="0.5" value="15" />
+          </div>
+          <div class="field">
+            <label for="c-labour">Labour ($)</label>
+            <input id="c-labour" type="number" min="0" step="5" value="70" />
+          </div>
+          <div class="field">
+            <label for="c-consum">Consumables ($)</label>
+            <input id="c-consum" type="number" min="0" step="1" value="20" />
+          </div>
+          <div class="field">
+            <label for="c-pack">Packaging ($)</label>
+            <input id="c-pack" type="number" min="0" step="1" value="25" />
+          </div>
+          <div class="field">
+            <label for="c-warranty">Warranty reserve (%)</label>
+            <input id="c-warranty" type="number" min="0" max="100" step="0.5" value="3" />
+          </div>
+          <div class="field">
+            <label for="c-fee">Payment fees (%)</label>
+            <input id="c-fee" type="number" min="0" max="50" step="0.5" value="3" />
+          </div>
+          <div class="field">
+            <label for="c-margin">Target margin (%)</label>
+            <input id="c-margin" type="number" min="0" max="90" step="1" value="20" />
+          </div>
+          <div class="field">
+            <label for="c-rate">Exchange rate (₦/$)</label>
+            <input id="c-rate" type="number" min="1" step="0.01" value="1361.34" />
+          </div>
+        </div>
+
+        <p class="field__hint">
+          Duty and VAT is a provisional 15% allowance on parts plus freight, not a customs
+          assessment. Confirm the classification and charges with a clearing agent before you
+          publish a final price.
+        </p>
+      </div>
+
+      <aside class="calc__out" aria-label="Cost breakdown">
+        <h3>Cost breakdown</h3>
+        <div id="calc-out"></div>
+        <button class="btn btn--ghost btn--block btn--sm" type="button" id="calc-copy" style="margin-top: 18px;">
+          Copy cost sheet
+        </button>
+        <p class="calc__status" id="calc-status" role="status" aria-live="polite"></p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ INCLUDED ============================ -->
+<section class="section section--tight" style="border-block: 1px solid var(--line); background: var(--bg-elev);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Standard, not optional</span>
+      <h2>Included with every rig</h2>
+      <p>The same build standard whether you spend $649 or $4,299.</p>
+    </div>
+    <div class="included" id="included-grid"><!-- rendered by app.js --></div>
+  </div>
+</section>
+
+<!-- ============================ COMPONENTS ============================ -->
+<section class="section" id="components">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">How we choose parts</span>
+      <h2>The tier ladder, in public.</h2>
+      <p>
+        This is the reference we actually build from. If a part isn't on the ladder, it doesn't get quoted.
+        Tiers run from S — class-leading — down to F, which means avoid.
+      </p>
+    </div>
+
+    <div class="tabs" id="tier-tabs" role="tablist" aria-label="Component categories"></div>
+    <div id="tier-panel" role="tabpanel" tabindex="0"></div>
+  </div>
+</section>
+
+<!-- ============================ SOURCING ============================ -->
+<section class="section" id="sourcing" style="border-block: 1px solid var(--line); background: var(--bg-elev);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Before you import</span>
+      <h2>What we order, and what it costs to land it.</h2>
+      <p>
+        This is the sourcing sheet we take to suppliers. Ask for quotes against exactly these
+        parts, with model numbers and declared values, and you get a like-for-like comparison
+        instead of three prices that mean different things.
+      </p>
+    </div>
+
+    <div class="table-wrap">
+      <table class="table">
+        <caption class="sr-only">Reference components by build tier</caption>
+        <thead>
+          <tr>
+            <th scope="col">Part</th>
+            <th scope="col">Low tier <span>$800 of parts</span></th>
+            <th scope="col">Mid tier <span>$1,500 of parts</span></th>
+            <th scope="col">High tier <span>$3,000 of parts</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">CPU</th><td>Ryzen 5 5600</td><td>Ryzen 5 9600X / Ryzen 7</td><td>Ryzen 7 9800X3D</td></tr>
+          <tr><th scope="row">GPU</th><td>RTX 5060-class</td><td>RTX 5070-class</td><td>RTX 5080-class</td></tr>
+          <tr><th scope="row">Motherboard</th><td>B550</td><td>B650 / B850</td><td>B850 / X870</td></tr>
+          <tr><th scope="row">Memory</th><td>16–32GB</td><td>32GB DDR5</td><td>32–64GB DDR5</td></tr>
+          <tr><th scope="row">Storage</th><td>1TB NVMe</td><td>2TB NVMe</td><td>2TB fast NVMe</td></tr>
+          <tr><th scope="row">Cooler</th><td>Stock / air</td><td>Tower air cooler</td><td>Premium air / liquid</td></tr>
+          <tr><th scope="row">PSU</th><td>650W</td><td>750–850W</td><td>850–1000W</td></tr>
+          <tr><th scope="row">Case</th><td>Mesh budget</td><td>Airflow mid-tower</td><td>Premium airflow tower</td></tr>
+          <tr><th scope="row">Misc</th><td>Fans, cables</td><td>RGB / fans, cables</td><td>RGB, fans, accessories</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="notes">
+      <article class="note-card">
+        <h3>Duty is an allowance, not a quote</h3>
+        <p>
+          The 15% figure in the calculator is a placeholder for planning. Real charges depend on
+          tariff classification, customs valuation, applicable levies and how the goods are
+          shipped. Get it confirmed by a clearing agent before you commit to a retail price.
+        </p>
+      </article>
+      <article class="note-card">
+        <h3>Ask for both freight options</h3>
+        <p>
+          <strong>Option A</strong> — all parts shipped separately, with model numbers and declared
+          values. <strong>Option B</strong> — a complete assembled PC, quoted with gross weight,
+          carton dimensions, insurance and delivery. The gap between them is usually the deciding
+          factor.
+        </p>
+      </article>
+      <article class="note-card">
+        <h3>Match before you order</h3>
+        <p>
+          Socket, chipset, memory generation, GPU clearance and PSU headroom. A supplier quote that
+          doesn't list exact model numbers isn't a quote — it's a guess, and it will arrive as a
+          different part.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PROCESS ============================ -->
+<section class="section" id="process" style="border-block: 1px solid var(--line); background: var(--bg-elev);">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">From message to machine</span>
+      <h2>Five steps, no surprises.</h2>
+      <p>You'll know what's happening at every stage — usually before you ask.</p>
+    </div>
+
+    <div class="process">
+      <article class="step">
+        <div class="step__n">STEP 01</div>
+        <div>
+          <h3>Consult</h3>
+          <p>Tell us the games, the resolution and the budget. We'll tell you honestly where the money should go — and where it's wasted.</p>
+        </div>
+      </article>
+      <article class="step">
+        <div class="step__n">STEP 02</div>
+        <div>
+          <h3>Spec sheet</h3>
+          <p>A written quote with exact model numbers, tier grades and a compatibility check: socket, chipset, memory kit, PSU headroom, clearance.</p>
+        </div>
+      </article>
+      <article class="step">
+        <div class="step__n">STEP 03</div>
+        <div>
+          <h3>Source</h3>
+          <p>Parts are sourced from trusted suppliers and inspected on arrival. 70% deposit to order, balance on delivery. The quote locks for 7 days.</p>
+        </div>
+      </article>
+      <article class="step">
+        <div class="step__n">STEP 04</div>
+        <div>
+          <h3>Assemble &amp; test</h3>
+          <p>Assembly, cable management, BIOS and XMP/EXPO, Windows 11, drivers and fan curves — then 24 hours of CPU, GPU and memory stress testing with thermals logged.</p>
+        </div>
+      </article>
+      <article class="step">
+        <div class="step__n">STEP 05</div>
+        <div>
+          <h3>Deliver</h3>
+          <p>Bench photos, your parts sheet, thermal results and setup notes. Nationwide delivery, insured and tracked, with support on the other end.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAQ ============================ -->
+<section class="section" id="faq">
+  <div class="container" style="max-width: 900px;">
+    <div class="section-head">
+      <span class="eyebrow">Questions</span>
+      <h2>Before you order</h2>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>How long does a build take?</summary>
+        <p>Typically 5–10 working days once all parts are in hand. Fast-moving parts like current-gen GPUs can add a few days if a supplier is out of stock — we'll tell you at quote stage rather than after you've paid.</p>
+      </details>
+      <details>
+        <summary>Why are prices in dollars?</summary>
+        <p>PC components are imported and priced against the dollar, so parts costs move with the exchange rate. We quote in USD for stability and convert to Naira at our current rate, shown on the builds above. A quote locks for 7 days at the rate you were given.</p>
+      </details>
+      <details>
+        <summary>Do you deliver outside Lagos?</summary>
+        <p>Yes — nationwide, insured and tracked. Delivery cost depends on location and is added to your quote, never hidden. Larger builds ship in a padded crate with the GPU braced or packed separately.</p>
+      </details>
+      <details>
+        <summary>Can I supply some of my own parts?</summary>
+        <p>Yes. Bring your own GPU, storage or case and we'll build around it. We'll still compatibility-check everything first, and we can't warranty a part we didn't supply — but we do warranty the assembly and labour.</p>
+      </details>
+      <details>
+        <summary>What does the warranty actually cover?</summary>
+        <p>24 months on assembly and labour, plus the full manufacturer warranty on each component (usually 3–10 years on PSUs and coolers, 2–3 on GPUs). If a part fails, we handle the RMA — you don't chase the supplier.</p>
+      </details>
+      <details>
+        <summary>Does it come with Windows installed?</summary>
+        <p>Yes. Clean Windows 11 install, all drivers, BIOS updated, XMP/EXPO enabled, and a benchmark run recorded so you know what "normal" looks like for your machine.</p>
+      </details>
+      <details>
+        <summary>Can I upgrade it later?</summary>
+        <p>That's the point of the tier ladder. Every build list includes what to upgrade next and roughly when — usually storage first, then GPU, then CPU if the platform supports it.</p>
+      </details>
+      <details>
+        <summary>What if I don't know which build to pick?</summary>
+        <p>Send a quote request and describe what you play. If a cheaper build gets you the same experience, we'll say so — that's cheaper for both of us than a build you regret.</p>
+      </details>
+      <details>
+        <summary>Why is the price higher than US retail?</summary>
+        <p>Because the US price is not the price of the PC here. Add international freight, 15% duty and VAT allowance, clearing, assembly labour, a warranty reserve and payment fees, and a $1,500 parts list becomes a $2,672 machine. <a href="#pricing">The calculator</a> shows every line — you can check our arithmetic instead of taking our word for it.</p>
+      </details>
+      <details>
+        <summary>How exactly is the price calculated?</summary>
+        <p>Landed parts = (parts + freight) × (1 + duty). Cost = landed + labour + consumables + packaging + warranty reserve. List price = cost ÷ (1 − margin − payment fee). Nothing is added afterwards, and there is no "we'll see" margin hidden in the parts list.</p>
+      </details>
+      <details>
+        <summary>What if the exchange rate moves before I pay?</summary>
+        <p>A quote locks for 7 days at the rate you were given. After that, or if the Naira-dollar rate moves more than 5%, the balance is recalculated at the rate on the day of order. We tell you this up front rather than springing it at delivery.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ QUOTE ============================ -->
+<section class="section quote" id="quote">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Get a quote</span>
+      <h2>Tell us what you play.</h2>
+      <p>Two minutes now saves a rebuild later. You'll get a written spec sheet with exact parts and a locked price.</p>
+    </div>
+
+    <div class="quote__grid">
+      <form class="form" id="quote-form" novalidate>
+        <div class="field--row">
+          <div class="field">
+            <label for="q-name">Full name</label>
+            <input id="q-name" name="name" type="text" placeholder="Ada Obi" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="q-phone">WhatsApp number</label>
+            <input id="q-phone" name="phone" type="tel" placeholder="0801 234 5678" required autocomplete="tel" />
+          </div>
+        </div>
+
+        <div class="field--row">
+          <div class="field">
+            <label for="q-city">City / state</label>
+            <input id="q-city" name="city" type="text" placeholder="Lekki, Lagos" autocomplete="address-level2" />
+          </div>
+          <div class="field">
+            <label for="q-build">Build you're interested in</label>
+            <select id="q-build" name="build">
+              <!-- populated by app.js -->
+            </select>
+          </div>
+        </div>
+
+        <div class="field--row">
+          <div class="field">
+            <label for="q-use">Main use</label>
+            <select id="q-use" name="use">
+              <option value="Gaming — 1080p">Gaming — 1080p</option>
+              <option value="Gaming — 1440p" selected>Gaming — 1440p</option>
+              <option value="Gaming — 4K">Gaming — 4K</option>
+              <option value="Streaming + gaming">Streaming + gaming</option>
+              <option value="Video editing / 3D">Video editing / 3D</option>
+              <option value="AI / workstation">AI / workstation</option>
+              <option value="Office / everyday">Office / everyday</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="q-budget">Budget</label>
+            <select id="q-budget" name="budget">
+              <option value="Under $700">Under $700</option>
+              <option value="$700 – $1,200">$700 – $1,200</option>
+              <option value="$1,200 – $1,800" selected>$1,200 – $1,800</option>
+              <option value="$1,800 – $2,800">$1,800 – $2,800</option>
+              <option value="$2,800 +">$2,800 +</option>
+              <option value="Not sure yet">Not sure yet</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="q-notes">Anything else? <span style="text-transform:none; letter-spacing:0; color:var(--muted-2); font-weight:400;">(games, monitor, deadline, parts you already own)</span></label>
+          <textarea id="q-notes" name="notes" placeholder="Mostly Warzone and CS2 at 1440p. I already have a 165Hz monitor and a keyboard."></textarea>
+        </div>
+
+        <p class="field__hint" id="form-hint">
+          We reply on WhatsApp, usually within a few hours.
+        </p>
+      </form>
+
+      <aside class="summary" aria-label="Quote summary">
+        <h3>Your estimate</h3>
+        <div class="summary__list" id="summary-list"></div>
+        <div class="summary__total">
+          <span>Indicative total</span>
+          <b id="summary-total">—</b>
+        </div>
+        <p class="summary__note" id="summary-note">
+          Indicative only — final price confirmed in writing after we check current part availability.
+        </p>
+        <button class="btn btn--primary btn--block" type="submit" form="quote-form" id="submit-btn">
+          Send quote request
+        </button>
+        <span class="summary__alt" id="summary-alt"></span>
+      </aside>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="#top">
+          <svg class="brand__mark" viewBox="0 0 32 32" aria-hidden="true">
+            <defs>
+              <linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff7a45" />
+                <stop offset="1" stop-color="#f5b642" />
+              </linearGradient>
+            </defs>
+            <path d="M16 1.5 29 8.75v14.5L16 30.5 3 23.25V8.75z" fill="none" stroke="url(#lg2)" stroke-width="1.4" opacity=".55" />
+            <path d="M18.9 7 10 17.4h4.6L13 25l9.4-11.1h-4.5z" fill="url(#lg2)" />
+          </svg>
+          <span>Solid<span class="brand__dot">Rig</span></span>
+        </a>
+        <p>Custom gaming and workstation PCs, assembled and tested in Nigeria. Priced in USD, quoted in Naira, delivered nationwide.</p>
+      </div>
+
+      <div>
+        <h4>Builds</h4>
+        <ul>
+          <li><a href="#builds">Solid One — entry</a></li>
+          <li><a href="#builds">Solid Strike — esports</a></li>
+          <li><a href="#builds">Solid Core — 1440p</a></li>
+          <li><a href="#builds">Solid Apex — enthusiast</a></li>
+          <li><a href="#builds">Solid Titan — flagship</a></li>
+          <li><a href="#builder">Build your own</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#components">Component tiers</a></li>
+          <li><a href="#pricing">How pricing works</a></li>
+          <li><a href="#sourcing">Sourcing sheet</a></li>
+          <li><a href="#process">How we build</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#quote">Get a quote</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> SolidRig. All rights reserved.</span>
+      <span id="footer-meta">Prices indicative and subject to part availability.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/parts.js"></script>
+<script src="assets/js/art.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/builder.js"></script>
+</body>
+</html>

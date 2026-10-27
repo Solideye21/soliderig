@@ -1,0 +1,27 @@
+Power Supply Tier Classifications
+Tier A (High-End / Multi-Rail / Full-Bridge LLC): Class-leading units with strict voltage regulation (<3%), ultra-low ripple (<50mV), and high-temperature tested protections. Ideal for expensive, high-draw gaming rigs and overclocking (e.g., Corsair RM1000x, Seasonic Prime TX, ASUS ROG Thor). 
+
+Cultists Network
+ +3
+Tier B (Mid-Range): Very good, reliable, and stable units utilizing modern DC-DC secondary and ZVS/ACRF primary designs. Best value-for-money choice for standard mid-range gaming builds (e.g., Seasonic Focus GX, Corsair RM750x, MSI MPG A750GF). 
+
+Hardware Busters
+ +2
+Tier C (Budget): Lower-end or entry-level units with basic independent regulation or relaxed voltage tolerances. Suitable only for low-budget or light gaming builds. 
+
+YouTube
+·Zach's Tech Turf
+ +2
+Tier D (Office / iGPU Only): Basic units meant strictly for low-power office machines or systems without a dedicated graphics card. Avoid using these for gaming or discrete GPUs. 
+
+YouTube
+·Jawa
+ +1
+Tier E (Avoid): Units with severe design flaws, missing core protections, or high failure rates. 
+
+Cultists Network
+Tier F / Defective (Unsafe / Fire Hazard): Defective or dangerously built units that must be replaced immediately (such as specific older revision explosive units like the Gigabyte P-GM). 
+
+Instagram
+·Jawa
+ +1

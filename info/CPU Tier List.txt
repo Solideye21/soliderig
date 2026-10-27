@@ -1,0 +1,64 @@
+S-Tier (Extreme / Enthusiast)
+Best for: Hardcore 4K/high-refresh gaming, heavy 3D rendering, and extreme multi-threaded workloads. 
+
+Tom's Hardware
+ +2
+Top Models:
+AMD Ryzen 9 9950X3D / Ryzen 9 9950X
+AMD Ryzen 7 9850X3D / Ryzen 7 9800X3D
+Intel Core i9-14900K
+Intel Core Ultra 9 285K 
+
+Tom's Hardware
+ +4
+A-Tier (High-End)
+Best for: High-FPS gaming, content creation, video editing, and heavy multitasking. 
+
+Facebook
+·Zestro Gaming
+ +1
+Top Models:
+AMD Ryzen 9 9900X / Ryzen 7 9700X
+AMD Ryzen 7 7800X3D / Ryzen 7 7700X
+Intel Core Ultra 7 270K Plus / Core Ultra 7 265K
+Intel Core i7-14700K 
+
+Intel
+ +3
+B-Tier (Mid-Range)
+Best for: Solid 1080p/1440p gaming, everyday productivity, and mainstream content creation. 
+
+Facebook
+·Zestro Gaming
+ +1
+Top Models:
+AMD Ryzen 5 9600X / Ryzen 5 7600X
+AMD Ryzen 5 7600X3D
+Intel Core Ultra 5 250K Plus / Core Ultra 5 245K
+Intel Core i5-14600K / Core i5-13600K 
+
+Tom's Hardware
+ +2
+C-Tier (Budget / Entry-Mid)
+Best for: Affordable 1080p gaming and general multitasking without overspending. 
+
+Facebook
+·Zestro Gaming
+ +1
+Top Models:
+AMD Ryzen 5 7600
+AMD Ryzen 5 8600G (with integrated graphics)
+Intel Core Ultra 5 225
+Intel Core i5-14400 / Core i5-13400F 
+
+Tom's Hardware
+ +2
+D-Tier (Entry-Level / Basic Office)
+Best for: Light office tasks, web browsing, media streaming, and older/light indie games. 
+
+Facebook
+·Zestro Gaming
+ +1
+Top Models:
+AMD Ryzen 5 5600 / Ryzen 3 series
+Intel Core i3-12100F

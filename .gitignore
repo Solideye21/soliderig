@@ -1,0 +1,8 @@
+# Research screenshots — kept locally, not published
+/Images/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log

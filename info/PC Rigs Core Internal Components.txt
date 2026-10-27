@@ -1,0 +1,41 @@
+Core Internal Components
+CPU (Central Processing Unit): The "brain" of the computer that handles process logic, general calculations, and system instructions (such as AMD Ryzen or Intel Core series). 
+
+FlowUP
+ +1
+GPU (Graphics Processing Unit / Video Card): The processor responsible for rendering 3D graphics, frame rates, and visual fidelity for gaming and creative tasks (such as Nvidia RTX or AMD RX series). 
+
+Epic Games
+ +1
+Motherboard: The main circuit board that acts as the central communication backbone, linking the CPU, GPU, RAM, and storage together. 
+
+YouTube
+·explainerguy01
+RAM (Random Access Memory): Short-term volatile memory that allows the system to multitask and load active applications quickly (DDR5 or DDR4). 
+
+YouTube
+·Empowered PC
+ +1
+Storage: Long-term data drives, with fast NVMe M.2 SSDs preferred for the operating system and games, alongside optional high-capacity HDDs. 
+
+Quora
+ +1
+PSU (Power Supply Unit): The unit that converts AC wall electricity into clean DC power for all internal components, measured in watts (e.g., 80 Plus Gold rated). 
+
+Facebook
+ +1
+Cooling & Chassis
+CPU Cooler: An air heatsink or all-in-one (AIO) liquid cooler mounted to the processor to prevent thermal throttling.
+PC Case (Tower): The outer enclosure that houses, organizes, and protects all internal hardware.
+Case Fans & Thermal Paste: Extra airflow fans and conductive compound to transfer heat safely from the CPU to the cooler. 
+
+YouTube
+·Tech Explainer Guy
+ +2
+Peripherals & Software
+Display & Input: A monitor, keyboard, and mouse.
+Operating System: An OS installer and license key (such as Windows 11).
+Optional Expansion Cards: Dedicated Wi-Fi/Network cards or sound cards if not built directly into the motherboard. 
+
+Evetech
+ +4
