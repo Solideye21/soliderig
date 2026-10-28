@@ -350,37 +350,104 @@ window.SOLIDRIG_ART = (function () {
 
     /* motherboard */
     var mx = gx + 54 * s, my = gy + 58 * s;
-    var mw = gw - 98 * s, mh = gh - 170 * s;
+    var mw = gw - 98 * s;
+    /* mATX boards are visibly shorter than ATX, and the pile rides on the board */
+    var mATX = !!(mb && /matx/i.test(mb.formFactor || ""));
+    var mh = (gh - 170 * s) * (mATX ? 0.88 : 1);
+    var ma = mb ? accent(mb.tier) : a;
+
+    /* PCB — lifted well clear of the glass tint so the board actually reads */
     steam.push('<rect x="' + n(mx) + '" y="' + n(my) + '" width="' + n(mw) + '" height="' + n(mh) +
-      '" rx="4" fill="#0d141d" stroke="#35435a" stroke-width="1.2"/>');
-    /* I/O shroud, VRM heatsinks */
-    steam.push('<rect x="' + n(mx + 6 * s) + '" y="' + n(my + 8 * s) + '" width="' + n(46 * s) + '" height="' + n(20 * s) +
-      '" rx="2" fill="#1b2430" stroke="#39465a"/>');
-    steam.push('<rect x="' + n(mx + 60 * s) + '" y="' + n(my + 10 * s) + '" width="' + n((mw - 148 * s)) + '" height="' + n(11 * s) +
-      '" rx="2" fill="#18212c" stroke="#333f52"/>');
-    steam.push('<rect x="' + n(mx + 8 * s) + '" y="' + n(my + 42 * s) + '" width="' + n(11 * s) + '" height="' + n(70 * s) +
-      '" rx="2" fill="#18212c" stroke="#333f52"/>');
+      '" rx="4" fill="url(#' + id + 'pcb)" stroke="#5a6c85" stroke-width="1.4"/>');
 
-    /* chipset, PCIe slots, M.2 */
-    steam.push('<rect x="' + n(mx + mw - 94 * s) + '" y="' + n(my + mh - 58 * s) + '" width="' + n(62 * s) + '" height="' + n(30 * s) +
-      '" rx="3" fill="#18212c" stroke="#3c4a5e"/>');
-    steam.push('<path d="M' + n(mx + mw - 88 * s) + ' ' + n(my + mh - 50 * s) + 'h' + n(50 * s) +
-      '" stroke="' + a + '" stroke-width="1.4" stroke-linecap="round" opacity="0.75"/>');
-    steam.push('<rect x="' + n(mx + 16 * s) + '" y="' + n(my + mh - 44 * s) + '" width="' + n(96 * s) + '" height="' + n(13 * s) +
-      '" rx="2" fill="#1b2430" stroke="#3c4a5e"/>');
-    steam.push('<circle cx="' + n(mx + 108 * s) + '" cy="' + n(my + mh - 37 * s) + '" r="' + n(2.2 * s) + '" fill="#5b6879"/>');
-    steam.push('<rect x="' + n(mx + 16 * s) + '" y="' + n(my + mh - 24 * s) + '" width="' + n(76 * s) + '" height="' + n(6 * s) +
-      '" rx="2" fill="#1a2430" stroke="#333f52"/>');
-
-    /* standoffs */
-    [[mx + 8, my + 8], [mx + mw - 8, my + 8], [mx + 8, my + mh - 8], [mx + mw - 8, my + mh - 8]].forEach(function (p) {
-      steam.push('<circle cx="' + n(p[0]) + '" cy="' + n(p[1]) + '" r="' + n(2.4 * s) + '" fill="#3c4857"/>');
+    /* standoffs / mounting holes */
+    [[mx + 9, my + 9], [mx + mw - 9, my + 9], [mx + 9, my + mh - 9], [mx + mw - 9, my + mh - 9]].forEach(function (p) {
+      steam.push('<circle cx="' + n(p[0]) + '" cy="' + n(p[1]) + '" r="' + n(3.2 * s) +
+        '" fill="#0e161f" stroke="#5f7189" stroke-width="1"/>');
     });
+
+    /* I/O shroud + VRM heatsinks */
+    steam.push('<rect x="' + n(mx + 6 * s) + '" y="' + n(my + 8 * s) + '" width="' + n(46 * s) + '" height="' + n(20 * s) +
+      '" rx="2" fill="#26333f" stroke="#4a5b72"/>');
+    steam.push('<rect x="' + n(mx + 60 * s) + '" y="' + n(my + 10 * s) + '" width="' + n((mw - 148 * s)) + '" height="' + n(11 * s) +
+      '" rx="2" fill="#1d2935" stroke="#41505f"/>');
+    steam.push('<rect x="' + n(mx + 8 * s) + '" y="' + n(my + 42 * s) + '" width="' + n(11 * s) + '" height="' + n(70 * s) +
+      '" rx="2" fill="#1d2935" stroke="#41505f"/>');
+    for (var vrm = 0; vrm < 7; vrm++) {
+      steam.push('<path d="M' + n(mx + 8 * s) + ' ' + n(my + 48 * s + vrm * 9 * s) + 'h' + n(11 * s) +
+        '" stroke="#2f3d4c" stroke-width="1.4"/>');
+    }
+
+    /* chipset heatsink, carrying the board's own tier colour */
+    steam.push('<rect x="' + n(mx + mw - 94 * s) + '" y="' + n(my + mh - 58 * s) + '" width="' + n(62 * s) + '" height="' + n(30 * s) +
+      '" rx="3" fill="#1d2935" stroke="' + ma + '" stroke-width="1.2"/>');
+    steam.push('<path d="M' + n(mx + mw - 88 * s) + ' ' + n(my + mh - 50 * s) + 'h' + n(50 * s) +
+      '" stroke="' + ma + '" stroke-width="1.6" stroke-linecap="round" opacity="0.85"/>');
+    steam.push('<path d="M' + n(mx + mw - 88 * s) + ' ' + n(my + mh - 40 * s) + 'h' + n(30 * s) +
+      '" stroke="#46586c" stroke-width="1.2" stroke-linecap="round" opacity="0.7"/>');
+
+    /* PCIe x16 (reinforced) + x1 */
+    steam.push('<rect x="' + n(mx + 16 * s) + '" y="' + n(my + mh - 44 * s) + '" width="' + n(96 * s) + '" height="' + n(13 * s) +
+      '" rx="2" fill="#22303e" stroke="#586b83"/>');
+    for (var pci = 0; pci < 9; pci++) {
+      steam.push('<path d="M' + n(mx + 22 * s + pci * 10 * s) + ' ' + n(my + mh - 41 * s) + 'v' + n(7 * s) +
+        '" stroke="#c2a869" stroke-width="1.6" opacity="0.55"/>');
+    }
+    steam.push('<circle cx="' + n(mx + 108 * s) + '" cy="' + n(my + mh - 37 * s) + '" r="' + n(2.2 * s) + '" fill="#7d8b9e"/>');
+    steam.push('<rect x="' + n(mx + 16 * s) + '" y="' + n(my + mh - 24 * s) + '" width="' + n(76 * s) + '" height="' + n(6 * s) +
+      '" rx="2" fill="#22303e" stroke="#44546a"/>');
+
+    /* M.2 storage — an empty slot above the populated one */
+    var st = sel.storage;
+    var sa = st ? accent(st.tier) : "#44546a";
+    var m2Y = my + 148 * s;
+    var m2W = mw * 0.42;
+    var m2H = st && ((st.gen || 3) >= 5 || ((st.gen || 3) >= 4 && (st.tb || 0) >= 2)) ? 21 * s : 14 * s;
+
+    steam.push('<rect x="' + n(mx + 26 * s) + '" y="' + n(m2Y - 9 * s) + '" width="' + n(m2W) + '" height="' + n(4.5 * s) +
+      '" rx="2.2" fill="#16202b" stroke="#3a4859"/>');
+
+    if (st) {
+      steam.push('<rect x="' + n(mx + 26 * s) + '" y="' + n(m2Y) + '" width="' + n(m2W) + '" height="' + n(m2H) +
+        '" rx="2.5" fill="#1b2734" stroke="' + sa + '" stroke-width="1.3"/>');
+      steam.push('<rect x="' + n(mx + 26 * s) + '" y="' + n(m2Y) + '" width="' + n(m2W) + '" height="' + n(4 * s) +
+        '" rx="2" fill="' + sa + '" opacity="0.85"/>');
+      for (var fin = 0; fin * 12 * s < m2W - 14 * s; fin++) {
+        steam.push('<path d="M' + n(mx + 33 * s + fin * 12 * s) + ' ' + n(m2Y + 7 * s) + 'v' + n(m2H - 9 * s) +
+          '" stroke="#33414f" stroke-width="1.4"/>');
+      }
+      /* connector edge, so the shield reads as a drive rather than a bar */
+      steam.push('<rect x="' + n(mx + 26 * s) + '" y="' + n(m2Y + 3 * s) + '" width="' + n(2.4 * s) + '" height="' + n(m2H - 6 * s) +
+        '" rx="1" fill="#c2a869" opacity="0.55"/>');
+    } else {
+      steam.push('<rect x="' + n(mx + 26 * s) + '" y="' + n(m2Y) + '" width="' + n(m2W) + '" height="' + n(4.5 * s) +
+        '" rx="2.2" fill="#16202b" stroke="#3a4859"/>');
+    }
+    /* silkscreen caption under the slot, clear of the DIMMs */
+    steam.push('<text x="' + n(mx + 26 * s) + '" y="' + n(m2Y + m2H + 8 * s) + '" fill="#94a2b6" ' +
+      'font-family="Inter, Segoe UI, sans-serif" font-size="' + n(7.5 * s) + '" letter-spacing="1.1">' +
+      esc(st ? "M.2 GEN " + (st.gen || 3) + " · " + (st.tb >= 1 ? st.tb + "TB" : "512GB") : "M.2 EMPTY") + "</text>");
+
+    /* silkscreen: board model, so the pick is legible on the artwork */
+    if (mb) {
+      steam.push('<text x="' + n(mx + 16 * s) + '" y="' + n(my + mh - 7 * s) + '" fill="#94a2b6" ' +
+        'font-family="Inter, Segoe UI, sans-serif" font-size="' + n(8.5 * s) + '" font-weight="600" letter-spacing="1.5">' +
+        esc(mb.name) + "</text>");
+    }
 
     /* CPU + cooler */
     var scx = mx + 96 * s, scy = my + 92 * s;
-    steam.push('<rect x="' + n(scx - 27 * s) + '" y="' + n(scy - 27 * s) + '" width="' + n(54 * s) + '" height="' + n(54 * s) +
-      '" rx="3" fill="#141c26" stroke="#3d4a5c" stroke-width="1.2"/>');
+    var ca = accent((sel.cpu && sel.cpu.tier) || "A");
+    /* socket + retention frame */
+    steam.push('<rect x="' + n(scx - 34 * s) + '" y="' + n(scy - 34 * s) + '" width="' + n(68 * s) + '" height="' + n(68 * s) +
+      '" rx="3" fill="#101a24" stroke="#4d5f76" stroke-width="1.2"/>');
+    /* the CPU itself: heatspreader, drawn before the cooler so it shows around it */
+    steam.push('<rect x="' + n(scx - 30 * s) + '" y="' + n(scy - 30 * s) + '" width="' + n(60 * s) + '" height="' + n(60 * s) +
+      '" rx="2.5" fill="url(#' + id + 'ihs)" stroke="#cdd7e5" stroke-width="1"/>');
+    steam.push('<path d="M' + n(scx - 20 * s) + ' ' + n(scy - 20 * s) + 'h' + n(40 * s) +
+      '" stroke="' + ca + '" stroke-width="2.4" stroke-linecap="round"/>');
+    steam.push('<path d="M' + n(scx - 8 * s) + ' ' + n(scy - 15 * s) + 'h' + n(16 * s) +
+      '" stroke="#5d6b7d" stroke-width="1.6" stroke-linecap="round"/>');
 
     var ctype = (cool && cool.type) || "air1";
     if (ctype === "air1" || ctype === "air2") {
@@ -388,10 +455,11 @@ window.SOLIDRIG_ART = (function () {
       var tw = 46 * s;
       var step = 52 * s;
       var baseX = scx - (towers === 2 ? 58 : 23) * s;
-      var topY = scy - 74 * s;
-      var towerH = 124 * s;
+      var towerH = 122 * s;
+      /* the tower's base meets the heatspreader, so the CPU stays visible below it */
+      var topY = scy + 2 * s - towerH;
 
-      steam.push('<rect x="' + n(scx - 30 * s) + '" y="' + n(scy + 32 * s) + '" width="' + n(60 * s) + '" height="' + n(9 * s) +
+      steam.push('<rect x="' + n(scx - 30 * s) + '" y="' + n(scy + 33 * s) + '" width="' + n(60 * s) + '" height="' + n(7 * s) +
         '" rx="2" fill="#2b3644"/>');
 
       for (var t = 0; t < towers; t++) {
@@ -405,6 +473,9 @@ window.SOLIDRIG_ART = (function () {
         steam.push('<path d="M' + n(tx) + ' ' + n(topY + 2 * s) + 'h' + n(tw) +
           '" stroke="' + a + '" stroke-width="1.6" stroke-linecap="round" opacity="0.75"/>');
       }
+      /* cold plate resting on the CPU */
+      steam.push('<rect x="' + n(scx - 22 * s) + '" y="' + n(scy + 1 * s) + '" width="' + n(44 * s) + '" height="' + n(4 * s) +
+        '" rx="1.5" fill="#6b5a3c" stroke="#8a6a2f" stroke-width="1"/>');
       steam.push(fan(scx - (towers === 2 ? 70 : 48) * s, scy - 4 * s, (towers === 2 ? 22 : 28) * s, a, 0.32));
       if (towers === 2) steam.push(fan(scx + 52 * s, scy - 4 * s, 22 * s, a, 0.32));
     } else {
@@ -435,17 +506,22 @@ window.SOLIDRIG_ART = (function () {
         steam.push(fan(rx + (radW / radFans) * (rf + 0.5), ry + radH + 11 * s, 12 * s, a, 0.3));
       }
 
-      /* pump block over the socket */
-      steam.push('<circle cx="' + n(scx) + '" cy="' + n(scy) + '" r="' + n(28 * s) +
-        '" fill="#18212c" stroke="#46536a" stroke-width="1.2"/>');
+      /* pump block: a housing ring rather than a solid disc, so the CPU
+         heatspreader underneath stays visible */
+      steam.push('<circle cx="' + n(scx) + '" cy="' + n(scy) + '" r="' + n(35 * s) +
+        '" fill="none" stroke="#1a2430" stroke-width="' + n(13 * s) + '"/>');
+      steam.push('<circle cx="' + n(scx) + '" cy="' + n(scy) + '" r="' + n(41.5 * s) +
+        '" fill="none" stroke="#5b6c84" stroke-width="1.3"/>');
+      steam.push('<circle cx="' + n(scx) + '" cy="' + n(scy) + '" r="' + n(28.5 * s) +
+        '" fill="none" stroke="#4b5c73" stroke-width="1.2"/>');
       if (ctype === "aio360lcd") {
-        steam.push('<rect x="' + n(scx - 17 * s) + '" y="' + n(scy - 17 * s) + '" width="' + n(34 * s) + '" height="' + n(34 * s) +
+        steam.push('<rect x="' + n(scx - 21 * s) + '" y="' + n(scy - 21 * s) + '" width="' + n(42 * s) + '" height="' + n(42 * s) +
           '" rx="4" fill="#0c1118" stroke="' + a + '" stroke-width="1.4"/>');
-        steam.push('<path d="M' + n(scx - 9 * s) + ' ' + n(scy) + 'h' + n(18 * s) + '" stroke="' + a +
+        steam.push('<path d="M' + n(scx - 11 * s) + ' ' + n(scy) + 'h' + n(22 * s) + '" stroke="' + a +
           '" stroke-width="1.6" stroke-linecap="round"/>');
       } else {
-        steam.push('<circle cx="' + n(scx) + '" cy="' + n(scy) + '" r="' + n(19 * s) +
-          '" fill="none" stroke="' + a + '" stroke-width="1.6" opacity="0.65"/>');
+        steam.push('<circle cx="' + n(scx) + '" cy="' + n(scy) + '" r="' + n(24 * s) +
+          '" fill="none" stroke="' + a + '" stroke-width="1.6" opacity="0.6"/>');
         steam.push('<circle cx="' + n(scx) + '" cy="' + n(scy) + '" r="' + n(5 * s) +
           '" fill="' + a + '" opacity="0.5"/>');
       }
@@ -535,6 +611,13 @@ window.SOLIDRIG_ART = (function () {
       "</linearGradient>" +
       '<linearGradient id="' + id + 'gpu" x1="0" y1="0" x2="0" y2="1">' +
       '<stop offset="0" stop-color="#222c3a"/><stop offset="1" stop-color="#131a23"/>' +
+      "</linearGradient>" +
+      '<linearGradient id="' + id + 'pcb" x1="0" y1="0" x2="1" y2="1">' +
+      '<stop offset="0" stop-color="#20303f"/><stop offset="1" stop-color="#16202b"/>' +
+      "</linearGradient>" +
+      '<linearGradient id="' + id + 'ihs" x1="0" y1="0" x2="0" y2="1">' +
+      '<stop offset="0" stop-color="#b9c4d3"/><stop offset="0.5" stop-color="#8b98aa"/>' +
+      '<stop offset="1" stop-color="#636f81"/>' +
       "</linearGradient>" +
       '<linearGradient id="' + id + 'glass" x1="0" y1="0" x2="1" y2="1">' +
       '<stop offset="0" stop-color="rgba(150,190,255,0.07)"/>' +
